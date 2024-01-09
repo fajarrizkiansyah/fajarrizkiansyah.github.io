@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Invitation Wedding</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playball&family=Sacramento&family=
+      Work+Sans:ital,wght@0,400;0,600;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SimplyCountDown -->
+    <link rel="stylesheet" href="Countdown/simplyCountdown.theme.default.css" />
+    <script src="Countdown/simplyCountdown.min.js"></script>
+
+    <!-- Boostrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <main>
+        <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
+        <h1>Galih & Ratna</h1>
+        <p>Akan Melangsungkan Resepsi Pernikahan Pada :</p>
+        <div class="simply-countdown"></div>
+        <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Buka Undangan</a>
+      </main>
+    </section>
+
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Galih & Ratna Wedding</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Galih & Ratna Wedding
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gift">Gift</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Acara Pernikahan</h2>
+            <h3>
+              Yang Akan Diselenggarakan Pada Hari <br />
+              Minggu, 28 Januari 2024
+            </h3>
+            <p>
+              Oleh Karena Itu Dengan Segala Hormat Kami Bermaksud Mengundang
+              Bapak/Ibu/Saudara/i Untuk Hadir Di Acara Pernikahan Kami.
+            </p>
+          </div>
+        </div>
+
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Galih</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Harum, enim odit asperiores alias nesciunt accusamus!
+                </p>
+                <p>
+                  Putra Pertama Dari Bapak Hendri <br />
+                  dan <br />
+                  Ibu Maryati
+                </p>
+              </div>
+              <div class="col-4">
+                <img
+                  src="img/RF.jpg"
+                  alt="Galih"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+            </div>
+          </div>
+
+          <span class="love"
+            ><i class="bi bi-arrow-through-heart-fill"></i
+          ></span>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img
+                  src="img/Mahalini.jpg"
+                  alt="Ratna"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+              <div class="col-8">
+                <h3>Ratna</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Harum, enim odit asperiores alias nesciunt accusamus!
+                </p>
+                <p>
+                  Putra Pertama Dari Bapak Andri <br />
+                  dan <br />
+                  Ibu Susilawati
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Acara</h2>
+            <p class="alamat">
+              Alamat : Office PT. Farrasindo Perkasa <br />
+              Jl. Srengseng Raya No.41 A-B, RT.4/RW.1, Srengseng, Kec.
+              Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11630
+            </p>
+            <a
+              href="https://maps.app.goo.gl/sGHpCCZqKWXSuZyg9"
+              target="_blank"
+              class="btn btn-light btn-sm"
+            >
+              Lihat Peta</a
+            >
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header">Akad Nikah</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>08:00 WIB - 10:00 WIB</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar-heart d-block"></i>
+                    <span>Minggu, 28 Januari 2024</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Saat Acara Akad Diharapkan Untuk Kondusif & Mematuhi Protokol
+                Yang Sudah Ditentukan.
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Resepsi</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>11:00 WIB - Selesai</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar-heart d-block"></i>
+                    <span>Minggu, 28 Januari 2024</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Saat Acara Akad Diharapkan Untuk Kondusif & Mematuhi Protokol
+                Yang Sudah Ditentukan.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Bagaimana Cinta Kami Bersemi</span>
+            <h2>Cerita Kami</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              reiciendis quae exercitationem eos id error.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div
+                  class="timeline-image"
+                  style="background-image: url(https://picsum.photos/300/300)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Pertemuan Pertama</h3>
+                    <span>01 Januari 2019</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Modi laborum porro quis harum quasi earum veniam deleniti
+                      accusamus ipsa vero nobis, ipsam voluptatem eum, velit rem
+                      corporis. Doloremque, unde commodi?
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-inverted">
+                <div
+                  class="timeline-image"
+                  style="background-image: url(https://picsum.photos/400/400)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Mulai Serius</h3>
+                    <span>01 Januari 2022</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptatibus facilis ab minus. Aliquam tempora sit nihil!
+                      Molestias iusto sequi natus fuga doloremque culpa, error
+                      laudantium?
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  class="timeline-image"
+                  style="background-image: url(https://picsum.photos/500/500)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Tunangan</h3>
+                    <span>01 Januari 2022</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Ullam deleniti vitae excepturi, doloremque ipsum suscipit?
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <!-- <span>Bagaimana Cinta Kami Bersemi</span> -->
+            <h2>Gallery Foto</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+              enim!
+            </p>
+          </div>
+        </div>
+        <div
+          class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center"
+        >
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/12/1200/768"
+              data-toggle="lightbox"
+              data-caption="This describes the image"
+              data-gallery="mygallery"
+            >
+              <img
+                src="https://picsum.photos/id/12/300/468"
+                alt="Photo 1"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/13/1200/768"
+              data-toggle="lightbox"
+              data-caption="This describes the image"
+              data-gallery="mygallery"
+            >
+              <img
+                src="https://picsum.photos/id/13/300/468"
+                alt="Photo 2"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/14/1200/768"
+              data-toggle="lightbox"
+              data-caption="This describes the image"
+              data-gallery="mygallery"
+            >
+              <img
+                src="https://picsum.photos/id/14/300/468"
+                alt="Photo 2"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/15/1200/768"
+              data-toggle="lightbox"
+              data-caption="This describes the image"
+              data-gallery="mygallery"
+            >
+              <img
+                src="https://picsum.photos/id/15/300/468"
+                alt="Photo 2"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/16/1200/768"
+              data-toggle="lightbox"
+              data-caption="This describes the image"
+              data-gallery="mygallery"
+            >
+              <img
+                src="https://picsum.photos/id/16/300/468"
+                alt="Photo 2"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/17/1200/768"
+              data-toggle="lightbox"
+              data-caption="This describes the image"
+              data-gallery="mygallery"
+            >
+              <img
+                src="https://picsum.photos/id/17/300/468"
+                alt="Photo 2"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/18/1200/768"
+              data-toggle="lightbox"
+              data-caption="This describes the image"
+              data-gallery="mygallery"
+            >
+              <img
+                src="https://picsum.photos/id/18/300/468"
+                alt="Photo 2"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/19/1200/768"
+              data-toggle="lightbox"
+              data-caption="This describes the image"
+              data-gallery="mygallery"
+            >
+              <img
+                src="https://picsum.photos/id/19/300/468"
+                alt="Photo 2"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="rsvp">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Konfirmasi Kehadiran</h2>
+            <p>Isi Form dibawah ini untuk melakukan Konfirmasi Kehadiran</p>
+          </div>
+        </div>
+
+        <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST" 
+        action="https://script.google.com/macros/s/AKfycbyQ92QjmU2SlYVa72o3mIZHZKZ78MBITZPDzEYDbcCxlaQUI28U5G7s8yKLvxTPbpKWGQ/exec" id="my-form">
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama">
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah" class="form-label">Jumlah</label>
+              <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label">Konfirmasi</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Pilih Salah Satu</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-12" style="margin-top: 35px;">
+            <button class="btn btn-primary">Kirim</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="gift" class="gift">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Ungkapan Tanda Kasih</span>
+            <h2>Kirim Hadiah</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et minima sapiente corrupti, iusto a magni!</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+              <li class="list-group-item">A fourth item</li>
+              <li class="list-group-item">And a fifth one</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript Code -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+    <!-- Countdown -->
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2024, // required
+        month: 1, // required
+        day: 28, // required
+        hours: 9, // Default is 0 [0-23] integer
+        minutes: 0, // Default is 0 [0-59] integer
+        seconds: 0, // Default is 0 [0-59] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "Day", plural: "Day" },
+          hours: { singular: "Hour", plural: "Hour" },
+          minutes: { singular: "Minute", plural: "Minute" },
+          seconds: { singular: "Second", plural: "Second" },
+        },
+      });
+    </script>
+
+    <!-- JavaScript OffCanvas -->
+    <script>
+      const stickyTop = document.querySelector(".sticky-top");
+      const offcanvas = document.querySelector(".offcanvas");
+
+      offcanvas.addEventListener("show.bs.offcanvas", function () {
+        stickyTop.style.overflow = "visible";
+      });
+
+      offcanvas.addEventListener("hidden.bs.offcanvas", function () {
+        stickyTop.style.overflow = "hidden";
+      });
+    </script>
+    <!-- Disable Scroll -->
+    <script>
+      const rootElement = document.querySelector(":root");
+
+      function disableScroll() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollLeft = window.pageYOffset || document.documentElement.scrollLeft;
+        
+
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        }
+
+        rootElement.style.scrollBehavior = 'auto';
+      }
+
+      function enableScroll() {
+        window.onscroll = function() {}
+        rootElement.style.scrollBehavior = 'smooth';
+        localStorage.setItem('opened', 'true');
+      }
+
+      if(!localStorage.getItem('opened')) {
+        disableScroll();
+      }
+    </script>
+
+    <!-- Connect To Google Sheet -->
+    <script>
+    window.addEventListener("load", function() {
+    const form = document.getElementById('my-form');
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const action = e.target.action;
+      fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Konfirmasi Kehadiran Berhasil Terkirim!");
+    })
+  });
+});
+    </script>
+  </body>
+</html>
